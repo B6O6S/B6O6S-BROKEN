@@ -1,6 +1,6 @@
 --RELOAD GUI
 if game.CoreGui:FindFirstChild("SysBroker") then
-	game:GetService("StarterGui"):SetCore("SendNotification", {Title = "System Broken",Text = "GUI Already loaded, rejoin to re-execute",Duration = 5;})
+	game:GetService("StarterGui"):SetCore("SendNotification", {Title = "B6O6S 👑 👑",Text = "GUI Already loaded, rejoin to re-execute",Duration = 5;})
 	return
 end
 local version = 2
@@ -555,7 +555,7 @@ AntiRagdoll_Button.BorderSizePixel = 0
 AntiRagdoll_Button.Position = UDim2.new(0, 25, 0, 25)
 AntiRagdoll_Button.Size = UDim2.new(0, 150, 0, 30)
 AntiRagdoll_Button.Font = Enum.Font.Oswald
-AntiRagdoll_Button.Text = "Anti ragdoll"
+AntiRagdoll_Button.Text = "ما تطيح"
 AntiRagdoll_Button.TextColor3 = Color3.fromRGB(0, 0, 0)
 AntiRagdoll_Button.TextScaled = true
 AntiRagdoll_Button.TextSize = 14.000
@@ -600,7 +600,7 @@ PushAura_Button.BorderSizePixel = 0
 PushAura_Button.Position = UDim2.new(0, 210, 0, 25)
 PushAura_Button.Size = UDim2.new(0, 150, 0, 30)
 PushAura_Button.Font = Enum.Font.Oswald
-PushAura_Button.Text = "Push aura"
+PushAura_Button.Text = "دفع القريبين"
 PushAura_Button.TextColor3 = Color3.fromRGB(0, 0, 0)
 PushAura_Button.TextScaled = true
 PushAura_Button.TextSize = 14.000
@@ -615,7 +615,7 @@ BreakCannons_Button.BorderSizePixel = 0
 BreakCannons_Button.Position = UDim2.new(0, 25, 0, 225)
 BreakCannons_Button.Size = UDim2.new(0, 150, 0, 30)
 BreakCannons_Button.Font = Enum.Font.Oswald
-BreakCannons_Button.Text = "Break Cannons"
+BreakCannons_Button.Text = "تخريب المدافع"
 BreakCannons_Button.TextColor3 = Color3.fromRGB(0, 0, 0)
 BreakCannons_Button.TextScaled = true
 BreakCannons_Button.TextSize = 14.000
@@ -766,7 +766,7 @@ CannonTP3_Button.BorderSizePixel = 0
 CannonTP3_Button.Position = UDim2.new(0, 25, 0, 450)
 CannonTP3_Button.Size = UDim2.new(0, 150, 0, 30)
 CannonTP3_Button.Font = Enum.Font.Oswald
-CannonTP3_Button.Text = "TP Cannon 3"
+CannonTP3_Button.Text = "مدفع 3"
 CannonTP3_Button.TextColor3 = Color3.fromRGB(0, 0, 0)
 CannonTP3_Button.TextScaled = true
 CannonTP3_Button.TextSize = 14.000
@@ -1162,7 +1162,7 @@ UserIDTargetLabel.BorderSizePixel = 0
 UserIDTargetLabel.Position = UDim2.new(0, 150, 0, 70)
 UserIDTargetLabel.Size = UDim2.new(0, 300, 0, 75)
 UserIDTargetLabel.Font = Enum.Font.Oswald
-UserIDTargetLabel.Text = "ID: \nالدسبلاس: \nJoined: "
+UserIDTargetLabel.Text = "ID: \nDisplay: \nJoined: "
 UserIDTargetLabel.TextColor3 = Color3.fromRGB(0, 255, 255)
 UserIDTargetLabel.TextSize = 18.000
 UserIDTargetLabel.TextWrapped = true
@@ -1906,7 +1906,7 @@ Credits_Label.BorderSizePixel = 0
 Credits_Label.Position = UDim2.new(0, 25, 0, 150)
 Credits_Label.Size = UDim2.new(0, 350, 0, 150)
 Credits_Label.Font = Enum.Font.SourceSans
-Credits_Label.Text = "Made by: B6O6S \nDiscord: system_calix\nVersion: "..version
+Credits_Label.Text = "Made by: B6O6S 👑 \nDiscord: B6O6S HUB\nVersion: "..version
 Credits_Label.TextColor3 = Color3.fromRGB(0, 255, 255)
 Credits_Label.TextSize = 24.000
 Credits_Label.TextWrapped = true
@@ -2150,7 +2150,7 @@ end
 local function UpdateTarget(player)
 	pcall(function()
 		if table.find(ForceWhitelist,player.UserId) then
-			SendNotify("B6O6S","ما يمديك تتحكم في هذا الشخص: @"..player.Name.." / "..player.DisplayName,5)
+			SendNotify("B6O6S 👑","ما يمديك تتحكم في هذا الشخص: @"..player.Name.." / "..player.DisplayName,5)
 			player = nil
 		end
 	end)
@@ -2205,23 +2205,23 @@ Home_Section_Button.MouseButton1Click:Connect(function()
 	ChangeSection(Home_Section_Button)
 end)
 
-Game_Section_Button.MouseButton1Click:Connect(function()
+اللعبه.MouseButton1Click:Connect(function()
 	ChangeSection(Game_Section_Button)
 end)
 
-Character_Section_Button.MouseButton1Click:Connect(function()
+الاعب.MouseButton1Click:Connect(function()
 	ChangeSection(Character_Section_Button)
 end)
 
-Target_Section_Button.MouseButton1Click:Connect(function()
+المطارده.MouseButton1Click:Connect(function()
 	ChangeSection(Target_Section_Button)
 end)
 
-Animations_Section_Button.MouseButton1Click:Connect(function()
+المشيات.MouseButton1Click:Connect(function()
 	ChangeSection(Animations_Section_Button)
 end)
 
-Misc_Section_Button.MouseButton1Click:Connect(function()
+إضافية_Section_Button.MouseButton1Click:Connect(function()
 	ChangeSection(Misc_Section_Button)
 end)
 
@@ -2522,7 +2522,7 @@ end)
 CMDBar.FocusLost:Connect(function()
 	command = CMDBar.Text
 	Players:Chat(command)
-	SendNotify("System Broken",("Executed "..command),5)
+	SendNotify("B6O6S 👑",("Executed "..command),5)
 	CMDBar.Text = ""
 end)
 
@@ -2535,7 +2535,7 @@ WalkSpeed_Button.MouseButton1Click:Connect(function()
 			Speed = 16
 		end
 		plr.Character.Humanoid.WalkSpeed = tonumber(Speed)
-		SendNotify("System Broken","Walk speed updated.",5)
+		SendNotify("B6O6S 👑","Walk speed updated.",5)
 	end)
 end)
 
@@ -2546,7 +2546,7 @@ JumpPower_Button.MouseButton1Click:Connect(function()
 			Power = 50
 		end
 		plr.Character.Humanoid.JumpPower = tonumber(Power)
-		SendNotify("System Broken","Jump power updated.",5)
+		SendNotify("B6O6S 👑","Jump power updated.",5)
 	end)
 end)
 
@@ -2557,7 +2557,7 @@ FlySpeed_Button.MouseButton1Click:Connect(function()
 			Speed = 50
 		end
 		FlySpeed = tonumber(Speed)
-		SendNotify("System Broken","Fly speed updated.",5)
+		SendNotify("B6O6S 👑","Fly speed updated.",5)
 	end)
 end)
 
@@ -2570,12 +2570,12 @@ end)
 
 SaveCheckpoint_Button.MouseButton1Click:Connect(function()
 	SavedCheckpoint = GetRoot(plr).Position
-	SendNotify("System Broken","Checkpoint saved.",5)
+	SendNotify("B6O6S 👑","Checkpoint saved.",5)
 end)
 
 ClearCheckpoint_Button.MouseButton1Click:Connect(function()
 	SavedCheckpoint = nil
-	SendNotify("System Broken","Checkpoint cleared.",5)
+	SendNotify("B6O6S 👑","Checkpoint cleared.",5)
 end)
 
 local flying = true
@@ -2969,10 +2969,10 @@ WhitelistTarget_Button.MouseButton1Click:Connect(function()
 					table.remove(ScriptWhitelist, i)
 				end
 			end
-			SendNotify("System Broken",TargetedPlayer.." removed from whitelist.",5)
+			SendNotify("B6O6S 👑 👑",TargetedPlayer.." removed from whitelist.",5)
 		else
 			table.insert(ScriptWhitelist, Players[TargetedPlayer].UserId)
-			SendNotify("System Broken",TargetedPlayer.." added to whitelist.", 5)
+			SendNotify("B6O6S 👑 👑",TargetedPlayer.." added to whitelist.", 5)
 		end
 	end
 end)
@@ -3393,7 +3393,7 @@ Day_Button.MouseButton1Click:Connect(function()
 	if Shaders_Button.Ticket_Asset.ImageColor3 == Color3.fromRGB(255,0,0) then
 		game:GetService("Lighting").ClockTime = 14
 	else
-		SendNotify("System Broken","Please turn off shaders.",5)
+		SendNotify("B6O6S 👑 👑","Please turn off shaders.",5)
 	end
 end)
 
@@ -3401,7 +3401,7 @@ Night_Button.MouseButton1Click:Connect(function()
 	if Shaders_Button.Ticket_Asset.ImageColor3 == Color3.fromRGB(255,0,0) then
 		game:GetService("Lighting").ClockTime = 19
 	else
-		SendNotify("System Broken","Please turn off shaders.",5)
+		SendNotify("B6O6S 👑 👑","Please turn off shaders.",5)
 	end
 end)
 
@@ -3429,7 +3429,7 @@ end)
 FreeEmotes_Button.MouseButton1Click:Connect(function()
 	if not FreeEmotesEnabled then
 		FreeEmotesEnabled = true
-		SendNotify("System Broken","Loading free emotes.\nCredits: Gi#7331")
+		SendNotify("B6O6S 👑 👑","Loading free emotes.\nCredits: Gi#7331")
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/H20CalibreYT/SystemBroken/main/AllEmotes"))()
 	end
 end)
@@ -3467,7 +3467,7 @@ Players.PlayerRemoving:Connect(function(player)
 	pcall(function()
 		if player.Name == TargetedPlayer then
 			UpdateTarget(nil)
-			SendNotify("System Broken","Targeted player left/rejoined.",5)
+			SendNotify("B6O6S 👑 👑","Targeted player left/rejoined.",5)
 		end
 	end)
 end)
@@ -3480,19 +3480,19 @@ plr.CharacterAdded:Connect(function(x)
 	end
 	if PotionDi_Button.Ticket_Asset.ImageColor3 == Color3.fromRGB(0,255,0) then
 		ChangeToggleColor(PotionDi_Button)
-		SendNotify("System Broken","PotionDick was automatically disabled due to your character respawn",5)
+		SendNotify("B6O6S 👑 👑","PotionDick was automatically disabled due to your character respawn",5)
 	end
 	if PotionFling_Button.Ticket_Asset.ImageColor3 == Color3.fromRGB(0,255,0) then
 		ChangeToggleColor(PotionFling_Button)
-		SendNotify("System Broken","PotionFling was automatically disabled due to your character respawn",5)
+		SendNotify("B6O6S 👑 👑","PotionFling was automatically disabled due to your character respawn",5)
 	end
 	if AntiRagdoll_Button.Ticket_Asset.ImageColor3 == Color3.fromRGB(0,255,0) then
 		ChangeToggleColor(AntiRagdoll_Button)
-		SendNotify("System Broken","AntiRagdoll was automatically disabled due to your character respawn",5)
+		SendNotify("B6O6S 👑 👑","AntiRagdoll was automatically disabled due to your character respawn",5)
 	end
 	if SpamMines_Button.Ticket_Asset.ImageColor3 == Color3.fromRGB(0,255,0) then
 		ChangeToggleColor(SpamMines_Button)
-		SendNotify("System Broken","SpamMines was automatically disabled due to your character respawn",5)
+		SendNotify("B6O6S 👑 👑","SpamMines was automatically disabled due to your character respawn",5)
 	end
 	if Fly_Button.Ticket_Asset.ImageColor3 == Color3.fromRGB(0,255,0) then
 		ChangeToggleColor(Fly_Button)
@@ -3500,7 +3500,7 @@ plr.CharacterAdded:Connect(function(x)
 		Fly_Pad.Visible = false
 		KeyDownFunction:Disconnect()
 		KeyUpFunction:Disconnect()
-		SendNotify("System Broken","Fly was automatically disabled due to your character respawn",5)
+		SendNotify("B6O6S 👑 👑","Fly was automatically disabled due to your character respawn",5)
 	end
 	x.Humanoid.Died:Connect(function()
 		pcall(function()
@@ -3534,12 +3534,12 @@ plr.CharacterAdded:Connect(function(x)
 		end
 		if not (count == original_ammount) then
 			SysBroker:Destroy()
-			SendNotify("System Broken","An unexpected error occurred, re-joining...")
+			SendNotify("B6O6S 👑 👑","An unexpected error occurred, re-joining...")
 			game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId, game.JobId, plr)
 		end
 	else
 		SysBroker:Destroy()
-		SendNotify("System Broken","An unexpected error occurred, re-joining...")
+		SendNotify("B6O6S 👑 👑","An unexpected error occurred, re-joining...")
 		game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId, game.JobId, plr)
 	end
 	appearance:Destroy()
@@ -3550,7 +3550,7 @@ task.spawn(function()
 		pcall(function()
 			local GuiVersion = loadstring(game:HttpGet("https://raw.githubusercontent.com/H20CalibreYT/SystemBroken/main/version"))()
 			if version<GuiVersion then
-				SendNotify("System Broken","You are not using the latest version, please run the script again.",5)
+				SendNotify("B6O6S 👑 👑","You are not using the latest version, please run the script again.",5)
 				task.wait(5)
 				SysBroker:Destroy()
 				game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId, game.JobId, plr)
@@ -3586,12 +3586,12 @@ task.spawn(function()
 
 			if (plr.Name ~= original_name) or (plr.DisplayName ~= original_display) or (plr.UserId ~= plr.CharacterAppearanceId) then
 				SysBroker:Destroy()
-				SendNotify("System Broken","An unexpected error occurred, re-joining...")
+				SendNotify("B6O6S 👑 👑","An unexpected error occurred, re-joining...")
 				game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId, game.JobId, plr)
 			end
 			if (date_1 ~= original_date) and (date_2 ~= original_date) and (date_3 ~= original_date) then
 				SysBroker:Destroy()
-				SendNotify("System Broken","An unexpected error occurred, re-joining...")
+				SendNotify("B6O6S 👑 👑","An unexpected error occurred, re-joining...")
 				game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId, game.JobId, plr)
 			end
 		end)
@@ -3617,6 +3617,6 @@ pcall(function()
     } :: Json)
 end)
 
-SendNotify("B6O6S","Gui developed by B6O6S#8348 - ",10)
+SendNotify("B6O6S 👑","Gui developed by B6O6S 👑#8348 - ",10)
 setclipboard("")
 loadstring(game:HttpGet("https://raw.githubusercontent.com/H20CalibreYT/SystemBroken/main/premium"))() -- load the premium
